@@ -1,0 +1,98 @@
+.footer-container  {
+       height: 28rem;
+       background-color: rgb(32, 31, 31);
+       color: white;
+       display: flex;
+       width: 100%;
+}
+.slogan {
+       width: 15rem;
+       margin: 4rem 5rem 0 5rem;
+}
+.slogan i {
+       font-size: 2rem;
+}
+.slogan i span {
+       font-size: 1.25rem;
+       margin-left: 1rem;
+       font-family: sans-serif;
+}
+.Pages {
+       margin: 3rem 3rem 0 3rem;
+}
+.Pages li {
+       padding-top: 1.3rem;
+       list-style: none;
+       font-size: 16px;
+       cursor: pointer;
+}
+.Pages  li:hover {
+       color: rgb(52, 144, 250);
+}
+.subcribe {
+       padding: 3rem 0 0 10rem;
+}
+.list-icon i {
+       cursor: pointer;
+       padding: 1rem 3.5rem 0 0;
+       font-size: 3rem;
+}
+@media screen and (max-width: 1125px) {
+    .Pages {
+        margin: 3rem 2rem 0 2rem;
+    }
+    .subcribe {
+        padding: 3rem 0 0 6rem;
+    }
+}
+@media screen and (max-width:640px) {
+    .footer-container  {
+        height: 40rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .Pages {
+        display: flex;
+        margin: 2rem 0rem 0 2rem;
+    }
+    .Pages li {
+        padding-left: 2rem;
+    }
+    .slogan {
+        margin: 6rem 0 0 2rem;
+        width: 85%;
+    }
+    .subcribe {
+        padding: 4rem 0 0 2rem;
+    }
+    .list-icon {
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+        grid-gap: 30px;
+    }
+    .list-icon i {
+        cursor: pointer;
+        padding: 1rem 0rem 0 0;
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .Pages {
+        display: flex;
+        flex-direction: column ;
+    }
+    .Pages li {
+        padding-left: 0rem;
+    }
+    .list-icon {
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+        grid-gap: 10px;
+    }
+    .subcribe {
+        padding: 2rem 0 0 2rem;
+    }
+}

@@ -1,0 +1,99 @@
+.body-container {
+       margin-top: 5.1rem;
+       height: 700px;
+       background-color: #f8f4f4;
+       width: 100%;
+}
+.body-main {
+       display: flex;
+}
+.intro {
+       width: 90%;
+       padding: 6rem 0 0 3rem;
+}
+.intro p {
+  margin-bottom: 6rem;
+}
+.title {
+       padding: 1.5rem 0 1.5rem 0;
+       background-color: white;
+       font-size: 14px;
+       align-items: center;
+       display: flex;
+       justify-content: center;
+}
+img {
+       padding: 5.8rem 0 0 2.2rem;
+}
+#root > div > div.body-container > div.body-main > div.intro > button {
+  height: 3.5rem;
+  width: 256px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: rgb(36, 34, 34);
+  color: white;
+}
+#root > div > div.body-container > div.body-main > div.intro > button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#root > div > div.body-container > div.body-main > div.intro > button:hover {
+  background-color: black;
+}
+#root > div > div.body-container > div.body-main > div.intro > button span::after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#root > div > div.body-container > div.body-main > div.intro > button:hover span {
+  padding-right: 25px;
+}
+#root > div > div.body-container > div.body-main > div.intro > button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+@media screen and (min-width:1025px) and (max-width: 1125px) {
+  .body-container {
+    width: 100%;
+    height: 500px;
+  }
+  .body-container .img {
+    width: 70%;
+  }
+  .img img {
+    padding: 3rem 0 0 2.2rem;
+    width: 90%;
+  }
+  .body-container .intro {
+    width: 30%;
+    padding: 2rem 0 0 0;
+  }
+  .intro p {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width:1024px) {
+  .body-container {
+    height: 800px;
+    width: 100%;
+  }
+  .body-main {
+    display: flex;
+    flex-direction: column;
+  }
+  .body-main .img {
+    width: 90%;
+  }
+  .body-main img {
+    width: 90%;
+    padding: 3rem 0 0  2.2rem;
+  }
+  .body-container .intro {
+    width: 9k0%;
+    padding: 2rem 0 0 2.2rem;
+  }
+}
